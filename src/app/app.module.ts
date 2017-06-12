@@ -5,13 +5,18 @@ import { AppComponent } from './app.component';
 import { Routing } from './routes';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { CarouselComponent } from './carousel/carousel/carousel.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent
+    NavBarComponent,
+    CarouselComponent
   ],
   imports: [
     // Routing,
+    CarouselModule.forRoot(),
     BrowserModule
   ],
   providers: [],
