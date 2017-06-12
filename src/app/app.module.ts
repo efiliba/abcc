@@ -6,13 +6,19 @@ import { Routing } from './routes';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 import { CarouselModule } from 'ngx-bootstrap/carousel';
-import { CarouselComponent } from './carousel/carousel/carousel.component';
+import { CarouselComponent } from './home/carousel/carousel.component';
+import { BccTilesComponent } from './home/tiles/bcc-tiles.component';
+import { BackgroundSliderComponent } from './home/background-slider/background-slider.component';
+import { NewsComponent } from './home/news/news.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
-    CarouselComponent
+    CarouselComponent,
+    BccTilesComponent,
+    BackgroundSliderComponent,
+    NewsComponent
   ],
   imports: [
     // Routing,

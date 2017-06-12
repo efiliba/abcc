@@ -4,6 +4,9 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `<nav-bar></nav-bar>
   <main-carousel></main-carousel>
+  <bcc-tiles></bcc-tiles>
+  <background-slider></background-slider>
+  <news></news>
   `,
   styles: [``]
 })
