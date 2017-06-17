@@ -1,26 +1,5 @@
-<carousel>
-  <slide>
-    <img src="assets/images/Get-To-Know-Us-1400x520.png" alt="Get to know us" />
-  </slide>
-  <slide>
-    <img src="assets/images/slider-2-1400x520.png" alt="Second slide" />
-    <div class="carousel-caption">
-      <div class="thbs_caption_content">
-        <h4 class="thbs_title">Live Safely In Your Own Home</h4>
-      </div>
-    </div>
-  </slide>
-  <slide>
-    <img src="assets/images/disability-slider-2--1400x520.png" alt="Third slide" />
-    <div class="carousel-caption">
-      <h4 class="thbs_title">Live Comfortably On Your Own Terms</h4>
-    </div>
-  </slide>
-  <slide>
-    <img src="assets/images/newheader-1400x520.png" alt="Last slide" />
-    <div class="carousel-caption">
-      <h4 class="thbs_title">Affordable, Reliable, Personalised Home Care Services</h4>
-      <a href="http://bestchoicecare.com.au/get-started/" class="thbs_more">best choice care</a>
-    </div>
-  </slide>
-</carousel>
+<ngb-carousel>
+  <ng-template *ngFor="let slide of slides" ngbSlide>
+    <component-slide [slide]=slide></component-slide>
+  </ng-template>
+</ngb-carousel>
