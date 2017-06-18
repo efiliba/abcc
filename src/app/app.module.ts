@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { Routing } from './routes';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 
-// import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './home/carousel/carousel.component';
 import { BccTilesComponent } from './home/tiles/bcc-tiles.component';
@@ -14,6 +13,8 @@ import { NewsComponent } from './home/news/news.component';
 import { SlideComponent } from './home/carousel/slide.component';
 import { Parallax } from './common/parallax.directive';
 import { BccTileComponent } from './home/tiles/bcc-tile.component';
+import { IconBoxComponent } from './home/icon-box/icon-box.component';
+import { LinkIconBoxComponent } from './home/icon-box/link-icon-box.component';
 
 @NgModule({
   declarations: [
@@ -25,11 +26,12 @@ import { BccTileComponent } from './home/tiles/bcc-tile.component';
     NewsComponent,
     SlideComponent,
     Parallax,
-    BccTileComponent
+    BccTileComponent,
+    IconBoxComponent,
+    LinkIconBoxComponent
   ],
   imports: [
     // Routing,
-    // CarouselModule.forRoot(),
     NgbModule.forRoot(),
     BrowserModule
   ],

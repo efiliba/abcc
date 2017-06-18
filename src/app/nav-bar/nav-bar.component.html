@@ -1,3 +1,12 @@
+<a href="home"><img src="assets/images/logo.png" alt="Best Choice Care" /></a>
+<div *ngFor="let iconBox of iconBoxes">
+  <icon-box [content]=iconBox></icon-box>
+</div>
+<div *ngFor="let iconBox of linkIconBoxes">
+  <link-icon-box [content]=iconBox></link-icon-box>
+</div>
+<hr />
+
 <div id="site-header">
   <div class="tally_header tally_header_1">
     <div class="th_branding site_content_width">
