@@ -1,4 +1,5 @@
-<img src={{slide.image.source}} alt={{slide.image.alternate}}>
-<div class="carousel-caption">
-  {{slide.caption}}
+<img class="d-block img-fluid" src={{slide.image.source}} alt={{slide.image.alternate}}>
+<div class="carousel-caption d-none d-md-block">
+  <h4 class="thbs_title">{{slide.caption?.heading}}</h4>
+  <a href={{slide.caption?.anchor?.link}}>{{slide.caption?.anchor?.text}}</a>
 </div>

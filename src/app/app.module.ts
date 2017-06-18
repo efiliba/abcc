@@ -12,6 +12,8 @@ import { BccTilesComponent } from './home/tiles/bcc-tiles.component';
 import { BackgroundSliderComponent } from './home/background-slider/background-slider.component';
 import { NewsComponent } from './home/news/news.component';
 import { SlideComponent } from './home/carousel/slide.component';
+import { Parallax } from './common/parallax.directive';
+import { BccTileComponent } from './home/tiles/bcc-tile.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { SlideComponent } from './home/carousel/slide.component';
     BccTilesComponent,
     BackgroundSliderComponent,
     NewsComponent,
-    SlideComponent
+    SlideComponent,
+    Parallax,
+    BccTileComponent
   ],
   imports: [
     // Routing,

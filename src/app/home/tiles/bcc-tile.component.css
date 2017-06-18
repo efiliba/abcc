@@ -1,0 +1,15 @@
+.tile {
+  height: 100%;
+  background-color: rgb(218, 137, 143);
+  color: rgb(255, 255, 255);
+  padding: 25px;
+  transition: .8s linear;
+}
+
+.tile :hover {
+  background-color: transparent;
+}
+
+:host :hover {
+  background-color: rgb(99, 47, 95);
+}

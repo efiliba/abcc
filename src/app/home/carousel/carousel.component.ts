@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ICarouselSlide } from './carousel.interface';
 
 @Component({
   selector: 'main-carousel',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarouselComponent implements OnInit {
 
-  slides = [{
+  slides: ICarouselSlide[] = [{
     image: {
       source: "assets/images/Get-To-Know-Us-1400x520.png",
       alternate: "Get to know us"
@@ -17,30 +18,29 @@ export class CarouselComponent implements OnInit {
       source: "assets/images/slider-2-1400x520.png",
       alternate: "Second slide"
     },
-    caption: `
-      <div class="carousel-caption">
-        <div class="thbs_caption_content">
-          <h4 class="thbs_title">Live Safely In Your Own Home</h4>
-        </div>
-      </div>
-    `
+    caption: {
+      heading: "Live Safely In Your Own Home"
+    }
   }, {
     image: {
       source: "assets/images/disability-slider-2--1400x520.png",
       alternate: "Third slide"
     },
-    caption: `
-      <h4 class="thbs_title">Live Comfortably On Your Own Terms</h4>
-    `
+    caption: {
+      heading: "Live Comfortably On Your Own Terms"
+    }
   }, {
     image: {
       source: "assets/images/newheader-1400x520.png",
       alternate: "Last slide"
     },
-    caption: `
-      <h4 class="thbs_title">Affordable, Reliable, Personalised Home Care Services</h4>
-      <a href="http://bestchoicecare.com.au/get-started/" class="thbs_more">best choice care</a>
-    `
+    caption: {
+      heading: "Affordable, Reliable, Personalised Home Care Services",
+      anchor: {
+        link: "http://bestchoicecare.com.au/get-started",
+        text: "best choice care"
+      }
+    }
   }];
 
   constructor() { }
